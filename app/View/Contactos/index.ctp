@@ -19,18 +19,24 @@
               
                 <?php
                  echo $this->Form->input( 'nombre', array('value'=>'',  'type'=>'text', 'class'=>'span3',
-                                          'placeholder' => 'Aqui su nombre') );
+                                            'placeholder' => 'Aqui su nombre',
+                                            'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error'))
+                                           ));
                
-                 echo $this->Form->input( 'email', array('value'=>'',  'type'=>'email', 'class'=>'span3',
-                                          'placeholder' => 'Aqui su dirección de correo') );
+                 echo $this->Form->input( 'email', array('value'=>'',  'type'=>'email', 'class'=>'required span3',
+                                            'placeholder' => 'Aqui su dirección de correo',
+                                            'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error')) ));
             
                  echo $this->Form->input('consulta', array(
                                             'options' => array('Cabaña','Náutica'),
-                                            'empty' => '(Elija una opción)',
-                                            'class' => 'span3 ',
+                                            'class' => 'span3 ',  
+                                            'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error'))
                                         ));
-              
-                 echo $this->Form->input( 'message', array('value'=>'', 'type'=>'textarea', 'rows'=>'6', 'class'=>'span3'));
+            
+                 echo $this->Form->input( 'mensaje', array(
+                                            'value'=>'', 'type'=>'textarea', 'rows'=>'6', 'class'=>'span3',
+                                            'error' => array('attributes' => array('wrap' => 'div', 'class' => 'alert alert-error'))
+                                            ));
                 ?>
 
                 <button type="submit" class="btn">Enviar
