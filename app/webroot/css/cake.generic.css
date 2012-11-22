@@ -105,8 +105,8 @@ p {
 	overflow: auto;
 }
 #footer {
-	clear: both;
-	padding: 6px 10px;
+    clear: both;
+    padding: 5px 10px;
 	text-align: right;
 }
 
@@ -737,3 +737,4 @@ pre {
 #url-rewriting-warning {
 	display:none;
 }
+
