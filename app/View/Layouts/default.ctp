@@ -86,7 +86,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                             <li <?=($this -> request -> controller == 'nauticas' && $this -> request -> action == 'index') ? 'class="active"' : 'class=""' ?>>
                                 <?php echo $this->Html->link('Almacén Náutico', array('controller'=>'nauticas', 'action'=>'index')); ?>
                               
-                            <li <?=($this -> request -> controller == 'pages' && $this->viewVars['page'] == 'contacto') ? 'class="active"' : 'class=""' ?>>
+                            <li <?=($this -> request -> controller == 'contactos' && $this -> request -> action == 'index') ? 'class="active"' : 'class=""' ?>>
                                 <?php echo $this->Html->link('Contacto', array('controller'=>'contactos', 'action'=>'index')); ?>
                             </li>
                           
@@ -113,71 +113,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                     
                     <div class="span3">
                         <div class="span3">
-                            <h2>Promociones</h2>
-                            
-                            <div id="CarouserCabania" class="carousel">
-                                <!-- Carousel items -->
-                                <div>
-                                <div class="carousel-inner">
-                                    <div class="active item">
-                                        <p> Cabaña + Playa </p>
-                                        <img src="http://lorempixel.com/400/200/nature/3" />
-                                        <p><a class="btn" href="#">+ info &raquo;</a></p>
-                                        
-                                    </div>
-                                    <div class="item">
-                                        <p> Cabaña + Paseo Lancha </p>
-                                        <img src="http://lorempixel.com/400/200/nature/1" />
-                                         <p><a class="btn" href="#">+ info &raquo;</a></p>
-                                    </div>
-                                    <div class="item">
-                                        <p>Circuito Turístico </p>
-                                        <img src="http://lorempixel.com/400/200/nature/2" />
-                                         <!--<?php echo $this->Html->link('+ info »', array('controller'=>'pages', 'action'=>'contacto'), array('class'=>'btn')); ?>-->
-                                        <p><a class="btn" href="#">+ info &raquo;</a></p>
-                                    </div>
-                                      <!-- Carousel nav -->
-                               
-                               </div>
-
-                                <a class="carousel-control left" href="#CarouserCabania" data-slide="prev">&lsaquo;</a>
-                                <a class="carousel-control right" href="#CarouserCabania" data-slide="next">&rsaquo;</a>
-
-               
-                        </div>
-                        </div>
-                        </div>
-                        <div class="span3">
-                            <h2>Eventos</h2>
-                            <div id="CarouselNautica" class="carousel">
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="active item">
-                                        <p>Fiesta del Pescado Frito</p> 
-                                        <img src="http://lorempixel.com/400/200/nature/1" />
-                                        <p><a class="btn" href="#">+ info &raquo;</a></p>
-                                    </div>
-                                    <div class="item">
-                                        <p> Fiesta del Pescador</p>
-                                        <img src="http://lorempixel.com/400/200/nature/2" />
-                                        <p><a class="btn" href="#">+ info &raquo;</a></p>
-                                    </div>
-                                    <div class="item">
-                                        <p>Fiesta del Pan Casero </p>
-                                        <img src="http://lorempixel.com/400/200/nature/3" />
-                                        <p><a class="btn" href="#">+ info &raquo;</a></p>    
-                                    </div>
-                                      <!-- Carousel nav -->
-                               
-                               </div>
-                               <a class="carousel-control left" href="#CarouselNautica" data-slide="prev">&lsaquo;</a>
-                               <a class="carousel-control right" href="#CarouselNautica" data-slide="next">&rsaquo;</a>
-                            </div>
+                            <?php echo $this->element('elementoPromocion'); ?>
                         </div>
                         
-                            <div id="myCarousel" class="carousel slide">
-        
-                    </div>
+                        <div class="span3">
+                            <?php echo $this->element('elementoEvento'); ?>
+                        </div>
                     
                 </div> <!-- div row segundo nivel -->
             </div>
@@ -189,7 +130,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
             <hr>
             <div class="container">
                 <p>
-                Antártida Argentina s/n entre Panamá y Venezuela - Sauce Viejo - Santa Fe- Argentina - Te. +54 342 495 0480
+                <img class="icono" src ="img/iconos/direccion1.png"/> Antártida Argentina s/n entre Panamá y Venezuela - Sauce Viejo - Santa Fe - Argentina  |  <img class="icono" src ="img/iconos/telefono1.png"/>  (+54) (342) 495 0480 - (+54) (0342) 155 326489
                 </p>
             </div>
         </footer>
