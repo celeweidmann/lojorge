@@ -14,14 +14,24 @@ class Promocion extends AppModel {
     */
     public $validate = array(
                 'titulo' => array(
-                    'notempty' => array(
-                        'rule' => array('notempty'),
-                    ),
+                    'rule' => 'notEmpty',
+                    'required' => true,
+                    'message' => 'Debe ingresar un título para la promoción.',
                 ),
                 'descripcion' => array(
-                    'notempty' => array(
-                        'rule' =>  array('notempty') 
-                    ),
+                    'rule'      => 'notEmpty',
+                    'required'  => true,
+                    'message'   => 'Debe ingresar una descripción a la promoción.' 
+                ),
+                'fecha' => array(
+                    'rule'      => 'date',
+                    'allowEmpty'=> false,
+                    'message'   => 'Debe ingresar una fecha para la promoción.'
+                ),
+                 'foto' => array(
+                    'rule'      => 'notEmpty',
+                    'required'  => true,
+                    'message'   => 'Debe ingresar una foto para la promoción.'
                 ),
             );
 }
