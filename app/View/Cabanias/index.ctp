@@ -15,38 +15,44 @@
         <h2>Cabañas</h2>
         
         <p>
-        Las cabañas se encuentran situadas  en un entorno natural de añosa arboleda de algarrobos y talas, a pasos del río Coronda.
-        Equipadas con las comodidades de una cuidada hotelería.
-        Para que su estadía sea placentera contamos con las siguientes Comodidades y Servicios
+        Las cabañas se encuentran situadas  en un entorno natural de añosa arboleda de algarrobos y talas, a pasos del río Coronda.</br>
+        Equipadas con las comodidades de una cuidada hotelería, poseen capacidad de 2 hasta 5-6 personas.</br>
+        Para que su estadía sea placentera contamos con las siguientes Comodidades y Servicios:
         
-        Capacidad de 2 hasta 5-6 personas
         </p>
     </div>
-    <div class="span5">
-        <p>Comodidades</p>
-        <ul>
-            <li>TV.  D.V.D. TV. Pública Digital</li>
-            <li>Internet móvil</li>                                        
-            <li>Heladera c/ freezer</li>                                                             
-            <li>Juego de vajilla completa</li>                                                   
-            <li>Aire acondicionado Frío-calor</li>                                            
-            <li>Ventiladores de techo</li>                                                          
-            <li>Horno microondas</li>
-            <li>Somier  matrimonial y de una plaza</li>
-            <li>Asador  p/ cada cabaña.</li>   
+    <div class="span1"></div>
+    <div class="span3">
+        <h4>Comodidades</h4>
+        <ul class="unstyled">
+            <li><img class="icono" src="img/iconos/televisor.png" />  TV.  D.V.D. TV. Pública Digital</li>                                    
+            <li><img class="icono" src ="img/iconos/heladera.png"/>  Heladera c/ freezer</li>                                                             
+            <li><img class="icono" src ="img/iconos/vajilla.png"/>  Juego de vajilla completa</li>                                                   
+            <li><img class="icono" src ="img/iconos/aireAcondicionado.png"/>  Aire acondicionado Frío-calor</li>                                            
+            <li><img class="icono" src ="img/iconos/ventilador.png"/>  Ventiladores de techo</li>                                                          
+            <li><img class="icono" src ="img/iconos/microondas.png"/>  Horno microondas</li>
+            <li><img class="icono" src ="img/iconos/cama.png"/>  Somier matrimonial y de una plaza</li>
+            <li><img class="icono" src ="img/iconos/fuego.png"/>  Asador  p/ cada cabaña.</li>   
 
         </ul>
     </div>
-        <div class="span4"
-        <p>Servicios</p>
-        <ul>
-            <li>Internet móvil</li>                                                                                               
-            <li>Sábanas y abrigo de cama</li> 
-            <li>Servicio de mucama (optativo)</li>  
-            <li>Desayuno</li>
-            <li>Piletas con solárium</li>
+    <div class="span1"></div>
+    <div class="span3">
+        <h4>Servicios</h4>
+        <ul class="unstyled">
+            <li><img class="icono" src ="img/iconos/wifi.png"/>  Internet móvil</li>                                                                                               
+            <li><img class="icono" src ="img/iconos/ropaCama.png"/>  Sábanas y abrigo de cama</li> 
+            <li><img class="icono" src ="img/iconos/mucama.png"/>  Servicio de mucama (optativo)</li>  
+            <li><img class="icono" src ="img/iconos/cafe.png"/>  Desayuno</li>
+            <li><img class="icono" src ="img/iconos/pileta.png"/>  Piletas con solárium</li>
         </ul>
     </div>
+    <div class="span1"></div>
+    <div class="span8">
+            <p><em><b>Recuerde:</b> no aceptamos mascotas.</em> <img class="icono" src ="img/iconos/perro.png"/></p> 
+
+    </div>
+
 </div>
 
 <div class="span9">
