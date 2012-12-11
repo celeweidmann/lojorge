@@ -8,7 +8,7 @@
 ?>
 </head>
 <div class="row">
-            
+     
     <div class="span9 offset1">
         <h2>Eventos</h2>
          <?php if(empty($eventos)): ?>
@@ -19,25 +19,29 @@
 
             <?php foreach ($eventos as $evento): ?>
                 <div class="span8">
-                    
-                    <div class="span4">
-                        <?php echo $this->Html->image("eventos/".$evento['Evento']['id']."jpg", array('height' => '200', 'width'=>'400'))?>
-                        <p><a class="btn" href="#">+ info &raquo;</a></p>
-                     
+                     <h3><?php echo $evento['Evento']['titulo']; ?></h3>
+                    <div class="span3">
+                       
+                        <?php echo $this->Html->image("eventos/".$evento['Evento']['id'].".jpg", array('height' => '100', 'width'=>'200', 'class' => 'img-polaroid'))?>
+                        
+    
                     </div>
                     <div class="span4">
-                    <h3><?php echo $evento['Evento']['titulo']; ?></h3>
-                    
-                    <h4>Fecha: </h4> 
-                    <?php echo $evento['Evento']['fecha'];?>
-                
-                    <h4>Lugar: </h4>
-                    <?php echo $evento['Evento']['lugar'];?>
-                    
+                       <dl >
+                         <dt>Fecha</dt> 
+                         <dd> <?php echo $evento['Evento']['fecha'];?></dd>
+                         <dt>Lugar</dt>
+                         <dd> <?php echo $evento['Evento']['lugar'];?></dd>
+                      </dl>
+                      <p><a class="btn" href="<?php echo $evento['Evento']['link'] ?>">+ info &raquo;</a></p> 
                     </div>
                     <div class="span7">
                     <h4>Descripción: </h4>
-                    <?php echo $evento['Evento']['descripcion']; ?>
+                    
+                    <blockquote>
+                    <p style="text-align:justify">
+                         <?php echo $evento['Evento']['descripcion']; ?>
+                    </p></blockquote>
                     </div>
                </div>
              <?php endforeach; ?>
